@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.RunCucumberJunitTest" time="49.388" tests="19" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\vikaspal\Desktop\petstore-framework\target\test-classes;C:\Users\vikaspal\Desktop\petstore-framework\target\classes;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-core\5.3.7\serenity-core-5.3.7.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-model\5.3.7\serenity-model-5.3.7.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-text\1.15.0\commons-text-1.15.0.jar;C:\Users\vikaspal\.m2\repository\commons-net\commons-net\3.12.0\commons-net-3.12.0.jar;C:\Users\vikaspal\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\vikaspal\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\vikaspal\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\vikaspal\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\vikaspal\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\vikaspal\.m2\repository\org\jsoup\jsoup\1.21.2\jsoup-1.21.2.jar;C:\Users\vikaspal\.m2\repository\com\thoughtworks\xstream\xstream\1.4.21\xstream-1.4.21.jar;C:\Users\vikaspal\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\vikaspal\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\vikaspal\.m2\repository\com\opencsv\opencsv\5.12.0\opencsv-5.12.0.jar;C:\Users\vikaspal\.m2\repository\commons-beanutils\commons-beanutils\1.11.0\commons-beanutils-1.11.0.jar;C:\Users\vikaspal\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\vikaspal\.m2\repository\com\typesafe\config\1.4.5\config-1.4.5.jar;C:\Users\vikaspal\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\vikaspal\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\vikaspal\.m2\repository\org\freemarker\freemarker\2.3.34\freemarker-2.3.34.jar;C:\Users\vikaspal\.m2\repository\io\github\classgraph\classgraph\4.8.184\classgraph-4.8.184.jar;C:\Users\vikaspal\.m2\repository\com\github\ben-manes\caffeine\caffeine\3.2.3\caffeine-3.2.3.jar;C:\Users\vikaspal\.m2\repository\org\ehcache\ehcache\3.11.1\ehcache-3.11.1.jar;C:\Users\vikaspal\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\vikaspal\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\vikaspal\.m2\repository\net\bytebuddy\byte-buddy\1.18.5\byte-buddy-1.18.5.jar;C:\Users\vikaspal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.5\byte-buddy-agent-1.18.5.jar;C:\Users\vikaspal\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-all\0.64.8\flexmark-all-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark\0.64.8\flexmark-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.64.8\flexmark-ext-abbreviation-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.64.8\flexmark-ext-admonition-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.64.8\flexmark-ext-anchorlink-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.64.8\flexmark-ext-aside-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.64.8\flexmark-ext-attributes-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.64.8\flexmark-ext-autolink-0.64.8.jar;C:\Users\vikaspal\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.64.8\flexmark-ext-definition-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.64.8\flexmark-ext-emoji-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.64.8\flexmark-ext-enumerated-reference-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.64.8\flexmark-ext-escaped-character-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.64.8\flexmark-ext-footnotes-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.64.8\flexmark-ext-gfm-issues-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.64.8\flexmark-ext-gfm-strikethrough-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.64.8\flexmark-ext-gfm-tasklist-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.64.8\flexmark-ext-gfm-users-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.64.8\flexmark-ext-gitlab-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.64.8\flexmark-ext-jekyll-front-matter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.64.8\flexmark-ext-jekyll-tag-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.64.8\flexmark-ext-media-tags-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-macros\0.64.8\flexmark-ext-macros-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.64.8\flexmark-ext-ins-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.64.8\flexmark-ext-xwiki-macros-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.64.8\flexmark-ext-superscript-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.64.8\flexmark-ext-toc-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.64.8\flexmark-ext-typographic-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.64.8\flexmark-ext-wikilink-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.64.8\flexmark-ext-yaml-front-matter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.64.8\flexmark-ext-youtube-embedded-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-html2md-converter\0.64.8\flexmark-html2md-converter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.64.8\flexmark-jira-converter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.64.8\flexmark-pdf-converter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\1.0.10\openhtmltopdf-core-1.0.10.jar;C:\Users\vikaspal\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\1.0.10\openhtmltopdf-pdfbox-1.0.10.jar;C:\Users\vikaspal\.m2\repository\org\apache\pdfbox\xmpbox\2.0.24\xmpbox-2.0.24.jar;C:\Users\vikaspal\.m2\repository\de\rototor\pdfbox\graphics2d\0.32\graphics2d-0.32.jar;C:\Users\vikaspal\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\1.0.10\openhtmltopdf-rtl-support-1.0.10.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.64.8\flexmark-profile-pegdown-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.64.8\flexmark-util-ast-0.64.8.jar;C:\Users\vikaspal\.m2\repository\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.64.8\flexmark-util-builder-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.64.8\flexmark-util-collection-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.64.8\flexmark-util-data-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.64.8\flexmark-util-dependency-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.64.8\flexmark-util-format-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.64.8\flexmark-util-html-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.64.8\flexmark-util-misc-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.64.8\flexmark-util-options-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.64.8\flexmark-util-sequence-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.64.8\flexmark-util-visitor-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.64.8\flexmark-youtrack-converter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-resizable-image\0.64.8\flexmark-ext-resizable-image-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.64.8\flexmark-ext-tables-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util\0.64.8\flexmark-util-0.64.8.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-reports\5.3.7\serenity-reports-5.3.7.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-stats\5.3.7\serenity-stats-5.3.7.jar;C:\Users\vikaspal\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\2.3.0\kotlin-stdlib-2.3.0.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-reports-configuration\5.3.7\serenity-reports-configuration-5.3.7.jar;C:\Users\vikaspal\.m2\repository\com\ibm\icu\icu4j\72.1\icu4j-72.1.jar;C:\Users\vikaspal\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-report-resources\5.3.7\serenity-report-resources-5.3.7.jar;C:\Users\vikaspal\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\vikaspal\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\vikaspal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\vikaspal\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\vikaspal\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\vikaspal\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\vikaspal\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-api\4.41.0\selenium-api-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-support\4.41.0\selenium-support-4.41.0.jar;C:\Users\vikaspal\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-json\4.41.0\selenium-json-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.41.0\selenium-chrome-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.41.0\selenium-chromium-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.41.0\selenium-manager-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.41.0\selenium-firefox-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-http\4.41.0\selenium-http-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.41.0\selenium-edge-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.41.0\selenium-ie-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit\4.20.0\htmlunit-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-core-js\4.20.0\htmlunit-core-js-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\neko-htmlunit\4.20.0\neko-htmlunit-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-cssparser\4.20.0\htmlunit-cssparser-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-xpath\4.20.0\htmlunit-xpath-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-csp\4.20.0\htmlunit-csp-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-websocket-client\4.20.0\htmlunit-websocket-client-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\htmlunit3-driver\4.39.0\htmlunit3-driver-4.39.0.jar;C:\Users\vikaspal\.m2\repository\io\appium\java-client\10.0.0\java-client-10.0.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\groovy\groovy\4.0.29\groovy-4.0.29.jar;C:\Users\vikaspal\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\vikaspal\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\vikaspal\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\vikaspal\.m2\repository\com\paulhammant\ngwebdriver\1.2\ngwebdriver-1.2.jar;C:\Users\vikaspal\.m2\repository\joda-time\joda-time\2.14.0\joda-time-2.14.0.jar;C:\Users\vikaspal\.m2\repository\com\google\jimfs\jimfs\1.3.1\jimfs-1.3.1.jar;C:\Users\vikaspal\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\vikaspal\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\vikaspal\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\vikaspal\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\vikaspal\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\vikaspal\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\vikaspal\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\vikaspal\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-junit\5.3.7\serenity-junit-5.3.7.jar;C:\Users\vikaspal\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\vikaspal\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-cucumber\5.3.7\serenity-cucumber-5.3.7.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-screenplay\5.3.7\serenity-screenplay-5.3.7.jar;C:\Users\vikaspal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\5.3.7\serenity-screenplay-webdriver-5.3.7.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-core\7.34.2\cucumber-core-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-gherkin\7.34.2\cucumber-gherkin-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.2\cucumber-gherkin-messages-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\messages-ndjson\0.3.0\messages-ndjson-0.3.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\datatable\7.34.2\datatable-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-plugin\7.34.2\cucumber-plugin-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\docstring\7.34.2\docstring-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-csv\1.14.1\commons-csv-1.14.1.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\vikaspal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-junit\7.14.0\cucumber-junit-7.14.0.jar;C:\Users\vikaspal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\vikaspal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\vikaspal\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\vikaspal\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\vikaspal\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\vikaspal\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\vikaspal\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\vikaspal\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\vikaspal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\vikaspal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\vikaspal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-java\4.41.0\selenium-java-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.41.0\selenium-devtools-v143-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v144\4.41.0\selenium-devtools-v144-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v145\4.41.0\selenium-devtools-v145-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.41.0\selenium-remote-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-api\1.59.0\opentelemetry-api-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-context\1.59.0\opentelemetry-context-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-common\1.59.0\opentelemetry-common-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.59.0\opentelemetry-exporter-logging-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.59.0\opentelemetry-sdk-common-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.59.0\opentelemetry-sdk-extension-autoconfigure-spi-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.59.0\opentelemetry-sdk-extension-autoconfigure-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.59.0\opentelemetry-sdk-trace-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.59.0\opentelemetry-sdk-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.59.0\opentelemetry-sdk-metrics-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.59.0\opentelemetry-sdk-logs-1.59.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-os\4.41.0\selenium-os-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.41.0\selenium-safari-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\vikaspal\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\vikaspal\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.2.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\vikaspal\AppData\Local\Temp\surefire743355391017999248\surefirebooter-20260330155839974_3.jar C:\Users\vikaspal\AppData\Local\Temp\surefire743355391017999248 2026-03-30T15-58-39_592-jvmRun1 surefire-20260330155839974_1tmp surefire_0-20260330155839974_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\vikaspal\Desktop\petstore-framework\target\test-classes;C:\Users\vikaspal\Desktop\petstore-framework\target\classes;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-core\5.3.7\serenity-core-5.3.7.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-model\5.3.7\serenity-model-5.3.7.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-text\1.15.0\commons-text-1.15.0.jar;C:\Users\vikaspal\.m2\repository\commons-net\commons-net\3.12.0\commons-net-3.12.0.jar;C:\Users\vikaspal\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\vikaspal\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\vikaspal\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\vikaspal\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\vikaspal\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\vikaspal\.m2\repository\org\jsoup\jsoup\1.21.2\jsoup-1.21.2.jar;C:\Users\vikaspal\.m2\repository\com\thoughtworks\xstream\xstream\1.4.21\xstream-1.4.21.jar;C:\Users\vikaspal\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\vikaspal\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\vikaspal\.m2\repository\com\opencsv\opencsv\5.12.0\opencsv-5.12.0.jar;C:\Users\vikaspal\.m2\repository\commons-beanutils\commons-beanutils\1.11.0\commons-beanutils-1.11.0.jar;C:\Users\vikaspal\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\vikaspal\.m2\repository\com\typesafe\config\1.4.5\config-1.4.5.jar;C:\Users\vikaspal\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\vikaspal\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\vikaspal\.m2\repository\org\freemarker\freemarker\2.3.34\freemarker-2.3.34.jar;C:\Users\vikaspal\.m2\repository\io\github\classgraph\classgraph\4.8.184\classgraph-4.8.184.jar;C:\Users\vikaspal\.m2\repository\com\github\ben-manes\caffeine\caffeine\3.2.3\caffeine-3.2.3.jar;C:\Users\vikaspal\.m2\repository\org\ehcache\ehcache\3.11.1\ehcache-3.11.1.jar;C:\Users\vikaspal\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\vikaspal\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\vikaspal\.m2\repository\net\bytebuddy\byte-buddy\1.18.5\byte-buddy-1.18.5.jar;C:\Users\vikaspal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.5\byte-buddy-agent-1.18.5.jar;C:\Users\vikaspal\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-all\0.64.8\flexmark-all-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark\0.64.8\flexmark-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.64.8\flexmark-ext-abbreviation-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.64.8\flexmark-ext-admonition-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.64.8\flexmark-ext-anchorlink-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.64.8\flexmark-ext-aside-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.64.8\flexmark-ext-attributes-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.64.8\flexmark-ext-autolink-0.64.8.jar;C:\Users\vikaspal\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.64.8\flexmark-ext-definition-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.64.8\flexmark-ext-emoji-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.64.8\flexmark-ext-enumerated-reference-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.64.8\flexmark-ext-escaped-character-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.64.8\flexmark-ext-footnotes-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.64.8\flexmark-ext-gfm-issues-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.64.8\flexmark-ext-gfm-strikethrough-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.64.8\flexmark-ext-gfm-tasklist-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.64.8\flexmark-ext-gfm-users-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.64.8\flexmark-ext-gitlab-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.64.8\flexmark-ext-jekyll-front-matter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.64.8\flexmark-ext-jekyll-tag-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.64.8\flexmark-ext-media-tags-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-macros\0.64.8\flexmark-ext-macros-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.64.8\flexmark-ext-ins-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.64.8\flexmark-ext-xwiki-macros-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.64.8\flexmark-ext-superscript-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.64.8\flexmark-ext-toc-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.64.8\flexmark-ext-typographic-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.64.8\flexmark-ext-wikilink-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.64.8\flexmark-ext-yaml-front-matter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.64.8\flexmark-ext-youtube-embedded-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-html2md-converter\0.64.8\flexmark-html2md-converter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.64.8\flexmark-jira-converter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.64.8\flexmark-pdf-converter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\1.0.10\openhtmltopdf-core-1.0.10.jar;C:\Users\vikaspal\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\1.0.10\openhtmltopdf-pdfbox-1.0.10.jar;C:\Users\vikaspal\.m2\repository\org\apache\pdfbox\xmpbox\2.0.24\xmpbox-2.0.24.jar;C:\Users\vikaspal\.m2\repository\de\rototor\pdfbox\graphics2d\0.32\graphics2d-0.32.jar;C:\Users\vikaspal\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\1.0.10\openhtmltopdf-rtl-support-1.0.10.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.64.8\flexmark-profile-pegdown-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.64.8\flexmark-util-ast-0.64.8.jar;C:\Users\vikaspal\.m2\repository\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.64.8\flexmark-util-builder-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.64.8\flexmark-util-collection-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.64.8\flexmark-util-data-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.64.8\flexmark-util-dependency-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.64.8\flexmark-util-format-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.64.8\flexmark-util-html-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.64.8\flexmark-util-misc-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.64.8\flexmark-util-options-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.64.8\flexmark-util-sequence-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.64.8\flexmark-util-visitor-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.64.8\flexmark-youtrack-converter-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-resizable-image\0.64.8\flexmark-ext-resizable-image-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.64.8\flexmark-ext-tables-0.64.8.jar;C:\Users\vikaspal\.m2\repository\com\vladsch\flexmark\flexmark-util\0.64.8\flexmark-util-0.64.8.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-reports\5.3.7\serenity-reports-5.3.7.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-stats\5.3.7\serenity-stats-5.3.7.jar;C:\Users\vikaspal\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\2.3.0\kotlin-stdlib-2.3.0.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-reports-configuration\5.3.7\serenity-reports-configuration-5.3.7.jar;C:\Users\vikaspal\.m2\repository\com\ibm\icu\icu4j\72.1\icu4j-72.1.jar;C:\Users\vikaspal\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-report-resources\5.3.7\serenity-report-resources-5.3.7.jar;C:\Users\vikaspal\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\vikaspal\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\vikaspal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\vikaspal\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\vikaspal\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\vikaspal\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\vikaspal\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-api\4.41.0\selenium-api-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-support\4.41.0\selenium-support-4.41.0.jar;C:\Users\vikaspal\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-json\4.41.0\selenium-json-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.41.0\selenium-chrome-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.41.0\selenium-chromium-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.41.0\selenium-manager-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.41.0\selenium-firefox-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-http\4.41.0\selenium-http-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.41.0\selenium-edge-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.41.0\selenium-ie-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit\4.20.0\htmlunit-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-core-js\4.20.0\htmlunit-core-js-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\neko-htmlunit\4.20.0\neko-htmlunit-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-cssparser\4.20.0\htmlunit-cssparser-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-xpath\4.20.0\htmlunit-xpath-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-csp\4.20.0\htmlunit-csp-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\htmlunit\htmlunit-websocket-client\4.20.0\htmlunit-websocket-client-4.20.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\htmlunit3-driver\4.39.0\htmlunit3-driver-4.39.0.jar;C:\Users\vikaspal\.m2\repository\io\appium\java-client\10.0.0\java-client-10.0.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\groovy\groovy\4.0.29\groovy-4.0.29.jar;C:\Users\vikaspal\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\vikaspal\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\vikaspal\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\vikaspal\.m2\repository\com\paulhammant\ngwebdriver\1.2\ngwebdriver-1.2.jar;C:\Users\vikaspal\.m2\repository\joda-time\joda-time\2.14.0\joda-time-2.14.0.jar;C:\Users\vikaspal\.m2\repository\com\google\jimfs\jimfs\1.3.1\jimfs-1.3.1.jar;C:\Users\vikaspal\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\vikaspal\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\vikaspal\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\vikaspal\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\vikaspal\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\vikaspal\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\vikaspal\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\vikaspal\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-junit\5.3.7\serenity-junit-5.3.7.jar;C:\Users\vikaspal\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\vikaspal\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-cucumber\5.3.7\serenity-cucumber-5.3.7.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-screenplay\5.3.7\serenity-screenplay-5.3.7.jar;C:\Users\vikaspal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\vikaspal\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\5.3.7\serenity-screenplay-webdriver-5.3.7.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-core\7.34.2\cucumber-core-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-gherkin\7.34.2\cucumber-gherkin-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.2\cucumber-gherkin-messages-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\messages-ndjson\0.3.0\messages-ndjson-0.3.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\datatable\7.34.2\datatable-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-plugin\7.34.2\cucumber-plugin-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\docstring\7.34.2\docstring-7.34.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-csv\1.14.1\commons-csv-1.14.1.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\vikaspal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\vikaspal\.m2\repository\io\cucumber\cucumber-junit\7.14.0\cucumber-junit-7.14.0.jar;C:\Users\vikaspal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\vikaspal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\vikaspal\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\vikaspal\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\vikaspal\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\vikaspal\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\vikaspal\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\vikaspal\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\vikaspal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\vikaspal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\vikaspal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-java\4.41.0\selenium-java-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.41.0\selenium-devtools-v143-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v144\4.41.0\selenium-devtools-v144-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v145\4.41.0\selenium-devtools-v145-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.41.0\selenium-remote-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-api\1.59.0\opentelemetry-api-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-context\1.59.0\opentelemetry-context-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-common\1.59.0\opentelemetry-common-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.59.0\opentelemetry-exporter-logging-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.59.0\opentelemetry-sdk-common-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.59.0\opentelemetry-sdk-extension-autoconfigure-spi-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.59.0\opentelemetry-sdk-extension-autoconfigure-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.59.0\opentelemetry-sdk-trace-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.59.0\opentelemetry-sdk-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.59.0\opentelemetry-sdk-metrics-1.59.0.jar;C:\Users\vikaspal\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.59.0\opentelemetry-sdk-logs-1.59.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-os\4.41.0\selenium-os-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.41.0\selenium-safari-driver-4.41.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\vikaspal\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\vikaspal\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\vikaspal\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\vikaspal"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-18.0.2.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\vikaspal\Desktop\petstore-framework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\vikaspal\AppData\Local\Temp\surefire743355391017999248\surefirebooter-20260330155839974_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.2.1+1-1"/>
+    <property name="user.name" value="vikaspal"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\vikaspal\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\vikaspal\AppData\Local\Temp\"/>
+    <property name="java.version" value="18.0.2.1"/>
+    <property name="user.dir" value="C:\Users\vikaspal\Desktop\petstore-framework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.2.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\vikaspal\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\vikaspal\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Microsoft VS Code;C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\vikaspal\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\node_modules;C:\Users\vikaspal\Downloads\apache-maven-3.9.10-bin\apache-maven-3.9.10\bin;C:\Program Files (x86)\Yarn\bin\;%JAVA_Home%;C:\Users\vikaspal\Downloads\apache-maven-3.9.10-bin\apache-maven-3.9.10\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\dotnet-core-uninstall\;C:\Users\vikaspal\AppData\Local\Microsoft\WindowsApps;C:\Users\vikaspal\AppData\Local\Yarn\bin;C:\Users\vikaspal\AppData\Local\Programs\Git\cmd;C:\Users\vikaspal\AppData\Roaming\npm;c:\Users\vikaspal\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.2.1+1-1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="Create a pet, update status, and verify via GET" classname="Pet API Positive Testing" time="9.944">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Create a pet, update status, and verify via GET                                                        &amp#27;[90m# src/test/resources/features/pet.feature:3&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have a pet payload with name &amp#27;[1m"doggie"&amp#27;[22m, category &amp#27;[1m"Dogs"&amp#27;[22m, status &amp#27;[1m"available"&amp#27;[22m and tags &amp#27;[1m"friendly,small"&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.PetSteps.i_have_a_pet_payload(java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[39m
+PET CREATE - Status: HTTP/1.1 200 OK
+PET CREATE - Body:
+{
+    "id": 1774866529177,
+    "category": {
+        "id": 1,
+        "name": "Dogs"
+    },
+    "name": "doggie",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "friendly"
+        },
+        {
+            "id": 2,
+            "name": "small"
+        }
+    ],
+    "status": "available"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to add pet&amp#27;[39m                                                                          &amp#27;[90m# stepdefinitions.PetSteps.i_send_post_request_to_add_pet()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mpet response status should be &amp#27;[1m200&amp#27;[22m&amp#27;[39m                                                                       &amp#27;[90m# stepdefinitions.PetSteps.pet_response_status_should_be(int)&amp#27;[39m
+Captured petId: 1774866529177
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mcreated pet id should be captured&amp#27;[39m                                                                        &amp#27;[90m# stepdefinitions.PetSteps.created_pet_id_should_be_captured()&amp#27;[39m
+PET UPDATE - Status: HTTP/1.1 200 OK
+PET UPDATE - Body:
+{
+    "id": 1774866529177,
+    "category": {
+        "id": 1,
+        "name": "Dogs"
+    },
+    "name": "doggie",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "friendly"
+        },
+        {
+            "id": 2,
+            "name": "small"
+        }
+    ],
+    "status": "sold"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI update the pet status to &amp#27;[1m"sold"&amp#27;[22m&amp#27;[39m                                                                       &amp#27;[90m# stepdefinitions.PetSteps.i_update_the_pet_status_to(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mpet response status should be &amp#27;[1m200&amp#27;[22m&amp#27;[39m                                                                       &amp#27;[90m# stepdefinitions.PetSteps.pet_response_status_should_be(int)&amp#27;[39m
+PET GET - petId: 1774866529177
+PET GET - Status: HTTP/1.1 200 OK
+PET GET - Body:
+{
+    "id": 1774866529177,
+    "category": {
+        "id": 1,
+        "name": "Dogs"
+    },
+    "name": "doggie",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "friendly"
+        },
+        {
+            "id": 2,
+            "name": "small"
+        }
+    ],
+    "status": "sold"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI get the pet by id&amp#27;[39m                                                                                     &amp#27;[90m# stepdefinitions.PetSteps.i_get_the_pet_by_id()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mpet status should be &amp#27;[1m"sold"&amp#27;[22m&amp#27;[39m                                                                             &amp#27;[90m# stepdefinitions.PetSteps.pet_status_should_be(java.lang.String)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="Search pets by status" classname="Pet API Positive Testing" time="2.45">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Search pets by status                           &amp#27;[90m# src/test/resources/features/pet.feature:13&amp#27;[39m
+PET FIND BY STATUS - Status: HTTP/1.1 200 OK
+PET FIND BY STATUS - Count: 346
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI search pets by status &amp#27;[1m"available"&amp#27;[22m&amp#27;[39m              &amp#27;[90m# stepdefinitions.PetSteps.i_search_pets_by_status(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mall returned pets should have status &amp#27;[1m"available"&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.PetSteps.all_returned_pets_should_have_status(java.lang.String)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Create pet with invalid status" classname="Pet API Negative Testing" time="1.482">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Create pet with invalid status                   &amp#27;[90m# src/test/resources/features/pet_negative.feature:3&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have invalid pet payload&amp#27;[39m                       &amp#27;[90m# stepdefinitions.NegativePetSteps.invalidPetPayload()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to create pet&amp#27;[39m                 &amp#27;[90m# stepdefinitions.NegativePetSteps.createPet()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mpet negative response status should be 400 or 200&amp#27;[39m &amp#27;[90m# stepdefinitions.NegativePetSteps.pet_negative_response_status_should_be_400_or_200()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Create pet with missing mandatory field #1" classname="Pet API Negative Testing" time="1.533">
+    <system-out><![CDATA[
+&amp#27;[1mScenario Outline:&amp#27;[22m Create pet with missing mandatory field  &amp#27;[90m# src/test/resources/features/pet_negative.feature:16&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have base pet payload&amp#27;[39m                          &amp#27;[90m# stepdefinitions.NegativePetSteps.i_have_base_pet_payload()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mI remove pet field &amp#27;[1m"name"&amp#27;[22m from payload&amp#27;[39m             &amp#27;[90m# stepdefinitions.NegativePetSteps.i_remove_field_from_payload(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to create pet&amp#27;[39m                 &amp#27;[90m# stepdefinitions.NegativePetSteps.createPet()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mpet negative response status should be 400 or 200&amp#27;[39m &amp#27;[90m# stepdefinitions.NegativePetSteps.pet_negative_response_status_should_be_400_or_200()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Create pet with missing mandatory field #2" classname="Pet API Negative Testing" time="1.582">
+    <system-out><![CDATA[
+&amp#27;[1mScenario Outline:&amp#27;[22m Create pet with missing mandatory field  &amp#27;[90m# src/test/resources/features/pet_negative.feature:17&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have base pet payload&amp#27;[39m                          &amp#27;[90m# stepdefinitions.NegativePetSteps.i_have_base_pet_payload()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mI remove pet field &amp#27;[1m"name"&amp#27;[22m from payload&amp#27;[39m             &amp#27;[90m# stepdefinitions.NegativePetSteps.i_remove_field_from_payload(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to create pet&amp#27;[39m                 &amp#27;[90m# stepdefinitions.NegativePetSteps.createPet()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mpet negative response status should be 400 or 200&amp#27;[39m &amp#27;[90m# stepdefinitions.NegativePetSteps.pet_negative_response_status_should_be_400_or_200()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Get pet with non-existing id" classname="Pet API Negative Testing" time="1.617">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Get pet with non-existing id              &amp#27;[90m# src/test/resources/features/pet_negative.feature:19&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send GET request with invalid pet id&amp#27;[39m     &amp#27;[90m# stepdefinitions.NegativePetSteps.getInvalidPet()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mpet negative response status should be &amp#27;[1m404&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.NegativePetSteps.pet_negative_response_status_should_be(int)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Update pet with invalid id" classname="Pet API Negative Testing" time="1.642">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Update pet with invalid id                       &amp#27;[90m# src/test/resources/features/pet_negative.feature:23&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have valid pet payload&amp#27;[39m                         &amp#27;[90m# stepdefinitions.NegativePetSteps.i_have_valid_pet_payload()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send PUT request with invalid id&amp#27;[39m                &amp#27;[90m# stepdefinitions.NegativePetSteps.updateInvalidPet()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mpet negative response status should be 400 or 200&amp#27;[39m &amp#27;[90m# stepdefinitions.NegativePetSteps.pet_negative_response_status_should_be_400_or_200()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Update pet with malformed JSON body" classname="Pet API Negative Testing" time="1.638">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Update pet with malformed JSON body              &amp#27;[90m# src/test/resources/features/pet_negative.feature:28&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send PUT request with malformed JSON body&amp#27;[39m       &amp#27;[90m# stepdefinitions.NegativePetSteps.putMalformedJson()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mpet negative response status should be 400 or 200&amp#27;[39m &amp#27;[90m# stepdefinitions.NegativePetSteps.pet_negative_response_status_should_be_400_or_200()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Place a order for a existing pet snd verify" classname="In this we will covering Store API automation" time="3.03">
+    <system-out><![CDATA[
+@store
+&amp#27;[1mScenario:&amp#27;[22m Place a order for a existing pet snd verify                                                              &amp#27;[90m# src/test/resources/features/store.feature:4&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have a valid order payload for the captured petID with quantity &amp#27;[1m1&amp#27;[22m,status &amp#27;[1m"placed"&amp#27;[22m and completed &amp#27;[1m"true"&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.Store.I_have_a_valid_payload_for_the_capture_petID(int,java.lang.String,java.lang.String)&amp#27;[39m
+PET CREATE - Status: HTTP/1.1 200 OK
+PET CREATE - Body:
+{
+    "id": 1774866550445,
+    "petId": 1774866550445,
+    "quantity": 1,
+    "shipDate": "2026-03-30T10:29:10.446+0000",
+    "status": "placed",
+    "complete": true
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send post request to place a order for pet&amp#27;[39m                                                              &amp#27;[90m# stepdefinitions.Store.I_send_post_request_to_place_a_order_for_pet()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22morder response status should be &amp#27;[1m200&amp#27;[22m&amp#27;[39m                                                                       &amp#27;[90m# stepdefinitions.Store.order_response_status_should_be(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send get request to get the order&amp#27;[39m                                                                       &amp#27;[90m# stepdefinitions.Store.I_send_get_request_to_get_the_order()&amp#27;[39m
+HTTP/1.1 200 OK
+Date: Mon, 30 Mar 2026 10:29:13 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 1774866550445,
+    "petId": 1774866550445,
+    "quantity": 1,
+    "shipDate": "2026-03-30T10:29:10.446+0000",
+    "status": "placed",
+    "complete": true
+}
+{
+    "id": 1774866550445,
+    "petId": 1774866550445,
+    "quantity": 1,
+    "shipDate": "2026-03-30T10:29:10.446+0000",
+    "status": "placed",
+    "complete": true
+}
+store inventor get request body{
+    "id": 1774866550445,
+    "petId": 1774866550445,
+    "quantity": 1,
+    "shipDate": "2026-03-30T10:29:10.446+0000",
+    "status": "placed",
+    "complete": true
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mprint response and validate the status&amp#27;[39m                                                                    &amp#27;[90m# stepdefinitions.Store.print_response_and_validate_the_status()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify the store inventory request" classname="In this we will covering Store API automation" time="1.587">
+    <system-out><![CDATA[
+@store
+&amp#27;[1mScenario:&amp#27;[22m Verify the store inventory request        &amp#27;[90m# src/test/resources/features/store.feature:13&amp#27;[39m
+PET CREATE - Status: HTTP/1.1 200 OK
+PET CREATE - Body:
+{
+    "https://ssrfpinger.aikidosec.com/uuid/set/46ff7eef-c06b-4808-b3cf-9b4b2879b511_status": 1,
+    "placed": 1,
+    "string": 432,
+    "alive": 1,
+    "pending": 44,
+    "available": 349,
+    "Not Available": 2,
+    "${sleep 15}\n": 2,
+    "2'; SELECT pg_sleep(15) -- -": 2,
+    "unknown_status": 1,
+    "Punching !!!": 1,
+    "`sleep 15`\n": 2,
+    "2'; SELECT SLEEP(15) -- -": 2,
+    "Available": 1,
+    "1;sleep${IFS}15;#${IFS}';sleep${IFS}15;#${IFS}\";sleep${IFS}15;#${IFS}\n": 2,
+    "2; SELECT SLEEP(15) -- -": 2,
+    "vendu": 1,
+    "sold": 106,
+    "${status}": 3,
+    "special": 2,
+    "invalid_status": 13,
+    "invalid": 1,
+    "2; SELECT pg_sleep(15) -- -": 2,
+    "супер": 1,
+    "https://ssrfpinger.aikidosec.com/uuid/set/681904cf-91dd-4fae-9a56-cea9c20878d8_status": 1,
+    "availble": 2
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send get request to get store inventrory&amp#27;[39m &amp#27;[90m# stepdefinitions.Store.I_send_get_request_to_get_store_inventrory()&amp#27;[39m
+HTTP/1.1 200 OK
+Date: Mon, 30 Mar 2026 10:29:14 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "https://ssrfpinger.aikidosec.com/uuid/set/46ff7eef-c06b-4808-b3cf-9b4b2879b511_status": 1,
+    "placed": 1,
+    "string": 432,
+    "alive": 1,
+    "pending": 44,
+    "available": 349,
+    "Not Available": 2,
+    "${sleep 15}\n": 2,
+    "2'; SELECT pg_sleep(15) -- -": 2,
+    "unknown_status": 1,
+    "Punching !!!": 1,
+    "`sleep 15`\n": 2,
+    "2'; SELECT SLEEP(15) -- -": 2,
+    "Available": 1,
+    "1;sleep${IFS}15;#${IFS}';sleep${IFS}15;#${IFS}\";sleep${IFS}15;#${IFS}\n": 2,
+    "2; SELECT SLEEP(15) -- -": 2,
+    "vendu": 1,
+    "sold": 106,
+    "${status}": 3,
+    "special": 2,
+    "invalid_status": 13,
+    "invalid": 1,
+    "2; SELECT pg_sleep(15) -- -": 2,
+    "супер": 1,
+    "https://ssrfpinger.aikidosec.com/uuid/set/681904cf-91dd-4fae-9a56-cea9c20878d8_status": 1,
+    "availble": 2
+}
+{
+    "https://ssrfpinger.aikidosec.com/uuid/set/46ff7eef-c06b-4808-b3cf-9b4b2879b511_status": 1,
+    "placed": 1,
+    "string": 432,
+    "alive": 1,
+    "pending": 44,
+    "available": 349,
+    "Not Available": 2,
+    "${sleep 15}\n": 2,
+    "2'; SELECT pg_sleep(15) -- -": 2,
+    "unknown_status": 1,
+    "Punching !!!": 1,
+    "`sleep 15`\n": 2,
+    "2'; SELECT SLEEP(15) -- -": 2,
+    "Available": 1,
+    "1;sleep${IFS}15;#${IFS}';sleep${IFS}15;#${IFS}\";sleep${IFS}15;#${IFS}\n": 2,
+    "2; SELECT SLEEP(15) -- -": 2,
+    "vendu": 1,
+    "sold": 106,
+    "${status}": 3,
+    "special": 2,
+    "invalid_status": 13,
+    "invalid": 1,
+    "2; SELECT pg_sleep(15) -- -": 2,
+    "супер": 1,
+    "https://ssrfpinger.aikidosec.com/uuid/set/681904cf-91dd-4fae-9a56-cea9c20878d8_status": 1,
+    "availble": 2
+}
+store inventor get request body{
+    "https://ssrfpinger.aikidosec.com/uuid/set/46ff7eef-c06b-4808-b3cf-9b4b2879b511_status": 1,
+    "placed": 1,
+    "string": 432,
+    "alive": 1,
+    "pending": 44,
+    "available": 349,
+    "Not Available": 2,
+    "${sleep 15}\n": 2,
+    "2'; SELECT pg_sleep(15) -- -": 2,
+    "unknown_status": 1,
+    "Punching !!!": 1,
+    "`sleep 15`\n": 2,
+    "2'; SELECT SLEEP(15) -- -": 2,
+    "Available": 1,
+    "1;sleep${IFS}15;#${IFS}';sleep${IFS}15;#${IFS}\";sleep${IFS}15;#${IFS}\n": 2,
+    "2; SELECT SLEEP(15) -- -": 2,
+    "vendu": 1,
+    "sold": 106,
+    "${status}": 3,
+    "special": 2,
+    "invalid_status": 13,
+    "invalid": 1,
+    "2; SELECT pg_sleep(15) -- -": 2,
+    "супер": 1,
+    "https://ssrfpinger.aikidosec.com/uuid/set/681904cf-91dd-4fae-9a56-cea9c20878d8_status": 1,
+    "availble": 2
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mprint response and validate the status&amp#27;[39m     &amp#27;[90m# stepdefinitions.Store.print_response_and_validate_the_status()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Place order with invalid petId returns client error #1" classname="Store API Negative Testing" time="1.587">
+    <system-out><![CDATA[
+&amp#27;[1mScenario Outline:&amp#27;[22m Place order with invalid petId returns client error                                  &amp#27;[90m# src/test/resources/features/store_negative.feature:11&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have a store order payload for petId &amp#27;[1m-1&amp#27;[22m with quantity &amp#27;[1m1&amp#27;[22m, status &amp#27;[1m"placed"&amp#27;[22m and complete &amp#27;[1mtrue&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.Store.store_order_payload_for_pet(long,int,java.lang.String,java.lang.String)&amp#27;[39m
+STORE ORDER POST - Status: HTTP/1.1 200 OK
+STORE ORDER POST - Body:
+{
+    "id": 1774866555072,
+    "petId": -1,
+    "quantity": 1,
+    "shipDate": "2026-03-30T10:29:15.072+0000",
+    "status": "placed",
+    "complete": true
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to place store order&amp#27;[39m                                                      &amp#27;[90m# stepdefinitions.Store.post_store_order()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mstore negative response status should be 400 or 200&amp#27;[39m                                           &amp#27;[90m# stepdefinitions.Store.store_negative_response_status_should_be_400_or_200()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Place order with invalid petId returns client error #2" classname="Store API Negative Testing" time="1.674">
+    <system-out><![CDATA[
+&amp#27;[1mScenario Outline:&amp#27;[22m Place order with invalid petId returns client error                                            &amp#27;[90m# src/test/resources/features/store_negative.feature:12&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have a store order payload for petId &amp#27;[1m999999999999&amp#27;[22m with quantity &amp#27;[1m1&amp#27;[22m, status &amp#27;[1m"placed"&amp#27;[22m and complete &amp#27;[1mtrue&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.Store.store_order_payload_for_pet(long,int,java.lang.String,java.lang.String)&amp#27;[39m
+STORE ORDER POST - Status: HTTP/1.1 200 OK
+STORE ORDER POST - Body:
+{
+    "id": 1774866556650,
+    "petId": 999999999999,
+    "quantity": 1,
+    "shipDate": "2026-03-30T10:29:16.650+0000",
+    "status": "placed",
+    "complete": true
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to place store order&amp#27;[39m                                                                &amp#27;[90m# stepdefinitions.Store.post_store_order()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mstore negative response status should be 400 or 200&amp#27;[39m                                                     &amp#27;[90m# stepdefinitions.Store.store_negative_response_status_should_be_400_or_200()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Get order with non-existing id returns not found" classname="Store API Negative Testing" time="1.547">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Get order with non-existing id returns not found   &amp#27;[90m# src/test/resources/features/store_negative.feature:15&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have a non-existing store orderId&amp#27;[39m                &amp#27;[90m# stepdefinitions.Store.i_have_a_non_existing_store_order_id()&amp#27;[39m
+STORE ORDER GET - Status: HTTP/1.1 404 Not Found
+STORE ORDER GET - Body:
+{
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send GET request to get store order by id&amp#27;[39m         &amp#27;[90m# stepdefinitions.Store.get_store_order_by_id()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mstore negative response status should be &amp#27;[1m404&amp#27;[22m&amp#27;[39m        &amp#27;[90m# stepdefinitions.Store.store_negative_response_status_should_be(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mstore error message should contain &amp#27;[1m"Order not found"&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.Store.store_error_message_should_contain(java.lang.String)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting an order twice returns 404 on second attempt" classname="Store API Negative Testing" time="4.818">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Deleting an order twice returns 404 on second attempt                                            &amp#27;[90m# src/test/resources/features/store_negative.feature:22&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have a store order payload for petId &amp#27;[1m123456&amp#27;[22m with quantity &amp#27;[1m1&amp#27;[22m, status &amp#27;[1m"placed"&amp#27;[22m and complete &amp#27;[1mtrue&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.Store.store_order_payload_for_pet(long,int,java.lang.String,java.lang.String)&amp#27;[39m
+STORE ORDER POST - Status: HTTP/1.1 200 OK
+STORE ORDER POST - Body:
+{
+    "id": 1774866559879,
+    "petId": 123456,
+    "quantity": 1,
+    "shipDate": "2026-03-30T10:29:19.879+0000",
+    "status": "placed",
+    "complete": true
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to place store order&amp#27;[39m                                                          &amp#27;[90m# stepdefinitions.Store.post_store_order()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mstore response status should be &amp#27;[1m200&amp#27;[22m&amp#27;[39m                                                               &amp#27;[90m# stepdefinitions.Store.store_response_status_should_be(int)&amp#27;[39m
+Captured orderId: 1774866559879
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mcreated order id should be captured&amp#27;[39m                                                                &amp#27;[90m# stepdefinitions.Store.created_order_id_should_be_captured()&amp#27;[39m
+STORE ORDER DELETE - Status: HTTP/1.1 200 OK
+STORE ORDER DELETE - Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1774866559879"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send DELETE request to delete store order by id&amp#27;[39m                                                 &amp#27;[90m# stepdefinitions.Store.delete_store_order_by_id()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mstore response status should be &amp#27;[1m200&amp#27;[22m&amp#27;[39m                                                               &amp#27;[90m# stepdefinitions.Store.store_response_status_should_be(int)&amp#27;[39m
+STORE ORDER DELETE - Status: HTTP/1.1 404 Not Found
+STORE ORDER DELETE - Body:
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "Order Not Found"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send DELETE request to delete store order by id again&amp#27;[39m                                           &amp#27;[90m# stepdefinitions.Store.delete_store_order_by_id_again()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mstore negative response status should be &amp#27;[1m404&amp#27;[22m&amp#27;[39m                                                      &amp#27;[90m# stepdefinitions.Store.store_negative_response_status_should_be(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mstore error message should contain &amp#27;[1m"Order not found"&amp#27;[22m&amp#27;[39m                                               &amp#27;[90m# stepdefinitions.Store.store_error_message_should_contain(java.lang.String)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Create user with valid data" classname="User API Testing" time="4.827">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Create user with valid data                                        &amp#27;[90m# src/test/resources/features/user.feature:2&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have valid user payload&amp#27;[39m                                          &amp#27;[90m# stepdefinitions.UserSteps.createUserPayload()&amp#27;[39m
+Status line: HTTP/1.1 200 OK
+Content-Type: application/json
+Response body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1774866564693"
+}
+
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to create user&amp#27;[39m                                  &amp#27;[90m# stepdefinitions.UserSteps.sendPostRequest()&amp#27;[39m
+Status code: 200
+Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1774866564693"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mresponse status should be 200&amp#27;[39m                                       &amp#27;[90m# stepdefinitions.UserSteps.validateStatusCode()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mresponse content type should be JSON&amp#27;[39m                                 &amp#27;[90m# stepdefinitions.UserSteps.validateContentType()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mresponse should contain success message&amp#27;[39m                              &amp#27;[90m# stepdefinitions.UserSteps.validateResponseBody()&amp#27;[39m
+username is testuser_1774866564693
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI login with the created username and password&amp#27;[39m                      &amp#27;[90m# stepdefinitions.UserSteps.loginWithCreatedUser()&amp#27;[39m
+Status code: 200
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mlogin should be successful with status 200&amp#27;[39m                          &amp#27;[90m# stepdefinitions.UserSteps.loginStatusOk()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mlogin response message should contain &amp#27;[1m"logged in user session"&amp#27;[22m&amp#27;[39m       &amp#27;[90m# stepdefinitions.UserSteps.loginMessageContains(java.lang.String)&amp#27;[39m
+{"id":1774866564693,"username":"testuser_1774866564693","firstName":"John","lastName":"Doe","email":"john@test.com","password":"12345","phone":"9999999999","userStatus":1}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI get user by the created username&amp#27;[39m                                  &amp#27;[90m# stepdefinitions.UserSteps.getUserByCreatedUsername()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22muser response should contain fields id, username, email, userStatus&amp#27;[39m &amp#27;[90m# stepdefinitions.UserSteps.userResponseHasFields()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser response fields should match the created payload&amp#27;[39m                &amp#27;[90m# stepdefinitions.UserSteps.userResponseMatchesPayload()&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Create user with missing mandatory field username" classname="User API Negative Testing" time="1.594">
+    <system-out><![CDATA[
+&amp#27;[1mScenario Outline:&amp#27;[22m Create user with missing mandatory field username &amp#27;[90m# src/test/resources/features/user_negative.feature:13&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have base user payload&amp#27;[39m                                  &amp#27;[90m# stepdefinitions.NegativeUserSteps.i_have_base_user_payload()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mI remove field &amp#27;[1m"username"&amp#27;[22m from payload&amp#27;[39m                      &amp#27;[90m# stepdefinitions.NegativeUserSteps.i_remove_field_from_payload(java.lang.String)&amp#27;[39m
+NEGATIVE CREATE - Status: HTTP/1.1 200 OK
+NEGATIVE CREATE - Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1774866569527"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to create user (negative)&amp#27;[39m              &amp#27;[90m# stepdefinitions.NegativeUserSteps.i_send_post_request_to_create_user_negative()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mnegative response status should be &amp#27;[1m200&amp#27;[22m&amp#27;[39m                     &amp#27;[90m# stepdefinitions.NegativeUserSteps.response_status_should_be(int)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Create user with missing mandatory field password" classname="User API Negative Testing" time="1.62">
+    <system-out><![CDATA[
+&amp#27;[1mScenario Outline:&amp#27;[22m Create user with missing mandatory field password &amp#27;[90m# src/test/resources/features/user_negative.feature:14&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mI have base user payload&amp#27;[39m                                  &amp#27;[90m# stepdefinitions.NegativeUserSteps.i_have_base_user_payload()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mI remove field &amp#27;[1m"password"&amp#27;[22m from payload&amp#27;[39m                      &amp#27;[90m# stepdefinitions.NegativeUserSteps.i_remove_field_from_payload(java.lang.String)&amp#27;[39m
+NEGATIVE CREATE - Status: HTTP/1.1 200 OK
+NEGATIVE CREATE - Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1774866571108"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI send POST request to create user (negative)&amp#27;[39m              &amp#27;[90m# stepdefinitions.NegativeUserSteps.i_send_post_request_to_create_user_negative()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mnegative response status should be &amp#27;[1m200&amp#27;[22m&amp#27;[39m                     &amp#27;[90m# stepdefinitions.NegativeUserSteps.response_status_should_be(int)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Login with a non-existing user" classname="User API Negative Testing" time="1.496">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Login with a non-existing user                      &amp#27;[90m# src/test/resources/features/user_negative.feature:17&amp#27;[39m
+NEGATIVE LOGIN - Username: nonexistent_1774866572728
+NEGATIVE LOGIN - Status: HTTP/1.1 200 OK
+NEGATIVE LOGIN - Body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "logged in user session:1774866574078"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI login with a non-existing user&amp#27;[39m                     &amp#27;[90m# stepdefinitions.NegativeUserSteps.i_login_with_a_non_existing_user()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mnegative response status should be &amp#27;[1m200&amp#27;[22m&amp#27;[39m               &amp#27;[90m# stepdefinitions.NegativeUserSteps.response_status_should_be(int)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22merror message should contain &amp#27;[1m"logged in user session"&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.NegativeUserSteps.error_message_should_contain(java.lang.String)&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="Get user with invalid username format" classname="User API Negative Testing" time="1.572">
+    <system-out><![CDATA[
+&amp#27;[1mScenario:&amp#27;[22m Get user with invalid username format &amp#27;[90m# src/test/resources/features/user_negative.feature:23&amp#27;[39m
+NEGATIVE GET - Username: Shree
+NEGATIVE GET - Status: HTTP/1.1 404 Not Found
+NEGATIVE GET - Body:
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mI get user by username &amp#27;[1m"Shree"&amp#27;[22m&amp#27;[39m         &amp#27;[90m# stepdefinitions.NegativeUserSteps.i_get_user_by_username(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mnegative response status should be &amp#27;[1m404&amp#27;[22m&amp#27;[39m &amp#27;[90m# stepdefinitions.NegativeUserSteps.response_status_should_be(int)&amp#27;[39m
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,144 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.api.automation</groupId>
+  <artifactId>petstore-framework</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <properties>
+    <maven.compiler.release>11</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <serenity.version>5.3.7</serenity.version>
+    <serenity.cucumber.version>5.3.7</serenity.cucumber.version>
+    <cucumber.version>7.14.0</cucumber.version>
+    <restassured.version>5.4.0</restassured.version>
+    <jackson.version>2.17.2</jackson.version>
+    <hamcrest.version>2.2</hamcrest.version>
+    <selenium.version>4.41.0</selenium.version>
+    <poi.version>5.5.1</poi.version>
+    <surefire.version>3.2.5</surefire.version>
+  </properties>
+
+  <dependencies>
+    <!-- Serenity core -->
+    <dependency>
+      <groupId>net.serenity-bdd</groupId>
+      <artifactId>serenity-core</artifactId>
+      <version>${serenity.version}</version>
+    </dependency>
+
+    <!-- Serenity JUnit runner (test scope) -->
+    <dependency>
+      <groupId>net.serenity-bdd</groupId>
+      <artifactId>serenity-junit</artifactId>
+      <version>${serenity.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Serenity Cucumber (compatible with Cucumber 7 in this stack) -->
+    <dependency>
+      <groupId>net.serenity-bdd</groupId>
+      <artifactId>serenity-cucumber</artifactId>
+      <version>${serenity.cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Cucumber Java and JUnit glue (test scope) -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>${cucumber.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- JUnit 4 (used by CucumberWithSerenity) -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+    </dependency>
+
+    <!-- REST and utils -->
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>${restassured.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <version>${hamcrest.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+
+    <!-- Optional: Selenium & POI if you actually use them -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>${selenium.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>${poi.version}</version>
+    </dependency>
+
+    <!-- IMPORTANT: Do NOT include TestNG or cucumber-testng or cucumber-picocontainer -->
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Run only the Serenity JUnit runner and skip TestNG runner classes -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${surefire.version}</version>
+        <configuration>
+          <!-- Use JUnit4 provider explicitly so CucumberWithSerenity (JUnit) runs even if TestNG is on classpath -->
+          <providers>
+            <provider>
+              <name>junit4</name>
+            </provider>
+          </providers>
+
+          <!-- Continue build even if tests fail (needed to always generate Serenity report) -->
+          <testFailureIgnore>true</testFailureIgnore>
+
+          <includes>
+            <!-- Adjust to your Serenity JUnit runner class name -->
+            <include>**/RunCucumberJunitTest.java</include>
+          </includes>
+          <excludes>
+            <!-- Exclude TestNG runner to avoid double runs and conflicts -->
+            <exclude>**/RunCucumberTest.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+
+      <!-- Generate Serenity aggregated report after tests -->
+      <plugin>
+        <groupId>net.serenity-bdd.maven.plugins</groupId>
+        <artifactId>serenity-maven-plugin</artifactId>
+        <version>${serenity.version}</version>
+        <executions>
+          <execution>
+            <id>serenity-reports</id>
+            <phase>post-integration-test</phase>
+            <goals>
+              <goal>aggregate</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

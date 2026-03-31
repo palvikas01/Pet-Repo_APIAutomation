@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Pet API Positive Testing" skipped="0" tests="2" time="11.87" timestamp="2026-03-30 03:58:48"><testcase name="Create a pet, update status, and verify via GET"/><testcase name="Search pets by status"/></testsuite>
