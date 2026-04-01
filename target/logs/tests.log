@@ -1,0 +1,48 @@
+2026-04-01 10:29:29.510 [main] INFO  net.thucydides.model.logging.ConsoleLoggingListener - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at https://serenity-bdd.info                                     
+ Documentation at https://serenity-bdd.github.io                                     
+ Test Automation Training and Coaching: https://www.serenity-dojo.com                
+ Commercial Support: https://www.serenity-dojo.com/serenity-bdd-enterprise-support   
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+-------------------------------------------------------------------------------------
+
+2026-04-01 10:29:29.518 [main] INFO  net.thucydides.model.logging.ConsoleLoggingListener - Test Suite Started: User API Testing
+2026-04-01 10:29:29.600 [main] INFO  net.thucydides.model.logging.ConsoleLoggingListener - Test Suite Started: User API Testing
+2026-04-01 10:29:29.892 [main] INFO  net.thucydides.model.logging.ConsoleLoggingListener - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Create user from Excel(user-api-testing;create-user-from-excel)
+--------------------------------------------------------------------------------
+2026-04-01 10:29:30.466 [main] INFO  stepdefinitions.LoggingHooks - === Starting scenario: Create user from Excel ===
+2026-04-01 10:29:32.214 [main] INFO  utils.Slf4jRestAssuredFilter - REST REQUEST: POST https://petstore.swagger.io/v2/user
+2026-04-01 10:29:38.190 [main] INFO  utils.Slf4jRestAssuredFilter - REST RESPONSE: HTTP/1.1 200 OK | code=200 | contentType=application/json
+2026-04-01 10:29:38.226 [main] INFO  stepdefinitions.UserSteps - Status line: HTTP/1.1 200 OK
+2026-04-01 10:29:38.226 [main] INFO  stepdefinitions.UserSteps - Content-Type: application/json
+2026-04-01 10:29:38.226 [main] INFO  stepdefinitions.UserSteps - Response body:
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "223"
+}
+2026-04-01 10:29:38.227 [main] INFO  stepdefinitions.UserSteps - Status code: 200
+2026-04-01 10:29:38.679 [main] INFO  stepdefinitions.LoggingHooks - === Finished scenario: Create user from Excel | failed=false ===
+2026-04-01 10:29:38.683 [main] INFO  net.thucydides.model.logging.ConsoleLoggingListener - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Create user from Excel
+----------------------------------------------------------------------

@@ -18,8 +18,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PetSteps {
+    private static final Logger log = LoggerFactory.getLogger(PetSteps.class);
     private static final String BASE_URI = "https://petstore.swagger.io/v2";
 
     Response response;
@@ -70,8 +73,8 @@ public class PetSteps {
         .when()
             .post("/pet");
 
-        System.out.println("PET CREATE - Status: " + response.getStatusLine());
-        System.out.println("PET CREATE - Body:\n" + response.asPrettyString());
+        log.info("PET CREATE - Status: {}", response.getStatusLine());
+        log.info("PET CREATE - Body:\n{}", response.asPrettyString());
     }
 
     @Then("pet response status should be {int}")
@@ -97,7 +100,7 @@ public class PetSteps {
         if (petPayload != null) {
             petPayload.put("id", petId);
         }
-        System.out.println("Captured petId: " + petId);
+        log.info("Captured petId: {}", petId);
     }
 
     @When("I update the pet status to {string}")
@@ -115,8 +118,8 @@ public class PetSteps {
         .when()
             .put("/pet");
 
-        System.out.println("PET UPDATE - Status: " + response.getStatusLine());
-        System.out.println("PET UPDATE - Body:\n" + response.asPrettyString());
+        log.info("PET UPDATE - Status: {}", response.getStatusLine());
+        log.info("PET UPDATE - Body:\n{}", response.asPrettyString());
     }
 
     @When("I get the pet by id")
@@ -128,9 +131,9 @@ public class PetSteps {
         .when()
             .get("/pet/{petId}");
 
-        System.out.println("PET GET - petId: " + petId);
-        System.out.println("PET GET - Status: " + response.getStatusLine());
-        System.out.println("PET GET - Body:\n" + response.asPrettyString());
+        log.info("PET GET - petId: {}", petId);
+        log.info("PET GET - Status: {}", response.getStatusLine());
+        log.info("PET GET - Body:\n{}", response.asPrettyString());
     }
 
     @Then("pet status should be {string}")
@@ -147,9 +150,9 @@ public class PetSteps {
         .when()
             .get("/pet/findByStatus");
 
-        System.out.println("PET FIND BY STATUS - Status: " + response.getStatusLine());
+        log.info("PET FIND BY STATUS - Status: {}", response.getStatusLine());
         // Don't print entire list to avoid huge logs
-        System.out.println("PET FIND BY STATUS - Count: " + response.jsonPath().getList("").size());
+        log.info("PET FIND BY STATUS - Count: {}", response.jsonPath().getList("").size());
 
         @SuppressWarnings("unchecked")
         List<Map<String, Object>> list = (List<Map<String, Object>>) (List<?>) response.jsonPath().getList("");

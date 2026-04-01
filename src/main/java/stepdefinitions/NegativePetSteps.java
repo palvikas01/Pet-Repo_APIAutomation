@@ -1,7 +1,12 @@
 package stepdefinitions;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 //import static org.testng.Assert.assertEquals;
+
 import static org.junit.Assert.assertEquals;
 
 import io.cucumber.java.en.Given;
@@ -9,12 +14,17 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
+import client.BaseApiClient;
 
-public class NegativePetSteps {
+public class NegativePetSteps extends BaseApiClient {
    Response response;
    Map<String, Object> payload;
    int petId;
+
+
+
    String baseUrl = "https://petstore.swagger.io/v2";
+
 
    // ---------------- NEGATIVE ----------------
    @Given("I have invalid pet payload")
@@ -31,7 +41,8 @@ public class NegativePetSteps {
    public void createPet() {
        response =
                given()
-                       .baseUri(baseUrl)
+                    //    .baseUri(prop.getProperty("baseUrl"))
+                    .baseUri(baseUrl)
                        .header("Content-Type", "application/json")
                        .body(payload)
                .when()
@@ -78,7 +89,7 @@ public class NegativePetSteps {
        );
    }
 
-   // ---------------- New steps to support negative feature ----------------
+   // ----------------  negative feature ----------------
 
    // Build a valid/base payload (id, name, photoUrls per spec, and valid status)
    @Given("I have base pet payload")

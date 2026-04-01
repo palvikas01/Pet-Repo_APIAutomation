@@ -14,8 +14,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Store {
+    private static final Logger log = LoggerFactory.getLogger(Store.class);
     private static final String BASE_URI= "https://petstore.swagger.io/v2";
 
     Response response;
@@ -45,8 +48,8 @@ public class Store {
             .when()
             .post("/store/order");
 
-        System.out.println("PET CREATE - Status: " + response.getStatusLine());
-        System.out.println("PET CREATE - Body:\n" + response.asPrettyString());
+        log.info("PET CREATE - Status: {}", response.getStatusLine());
+        log.info("PET CREATE - Body:\n{}", response.asPrettyString());
     }
     @Then("order response status should be {int}")
     public void order_response_status_should_be(int expected) {
@@ -63,15 +66,15 @@ public class Store {
             .when()
             .get("/store/inventory");
 
-        System.out.println("PET CREATE - Status: " + response.getStatusLine());
-        System.out.println("PET CREATE - Body:\n" + response.asPrettyString());
+        log.info("PET CREATE - Status: {}", response.getStatusLine());
+        log.info("PET CREATE - Body:\n{}", response.asPrettyString());
 
     }
     @Then("print response and validate the status")
         public void print_response_and_validate_the_status(){
             response.then().log().all(); 
             String body = response.prettyPrint();
-            System.out.println("store inventor get request body" +body);
+            log.info("store inventor get request body {}", body);
     }
 
     @When("I send get request to get the order")
@@ -115,8 +118,8 @@ public class Store {
         .when()
             .post("/store/order");
 
-        System.out.println("STORE ORDER POST - Status: " + response.getStatusLine());
-        System.out.println("STORE ORDER POST - Body:\n" + response.asPrettyString());
+        log.info("STORE ORDER POST - Status: {}", response.getStatusLine());
+        log.info("STORE ORDER POST - Body:\n{}", response.asPrettyString());
     }
 
     @Then("store response status should be {int}")
@@ -151,7 +154,7 @@ public class Store {
         } catch (Exception ignored) {}
         org.junit.Assert.assertNotNull("Order id was null in response", idFromResponse);
         orderId = idFromResponse;
-        System.out.println("Captured orderId: " + orderId);
+        log.info("Captured orderId: {}", orderId);
     }
 
     @When("I send GET request to get store order by id")
@@ -163,8 +166,8 @@ public class Store {
         .when()
             .get("/store/order/{orderId}");
 
-        System.out.println("STORE ORDER GET - Status: " + response.getStatusLine());
-        System.out.println("STORE ORDER GET - Body:\n" + response.asPrettyString());
+        log.info("STORE ORDER GET - Status: {}", response.getStatusLine());
+        log.info("STORE ORDER GET - Body:\n{}", response.asPrettyString());
     }
 
     @When("I send DELETE request to delete store order by id")
@@ -176,8 +179,8 @@ public class Store {
         .when()
             .delete("/store/order/{orderId}");
 
-        System.out.println("STORE ORDER DELETE - Status: " + response.getStatusLine());
-        System.out.println("STORE ORDER DELETE - Body:\n" + response.asPrettyString());
+        log.info("STORE ORDER DELETE - Status: {}", response.getStatusLine());
+        log.info("STORE ORDER DELETE - Body:\n{}", response.asPrettyString());
     }
 
     @When("I send DELETE request to delete store order by id again")

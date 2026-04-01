@@ -6,7 +6,7 @@ package runners;
 
     @RunWith(CucumberWithSerenity.class)
     @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/user.feature",
         glue = "stepdefinitions",
         plugin = {"pretty"}
     )

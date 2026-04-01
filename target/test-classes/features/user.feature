@@ -1,10 +1,11 @@
 Feature: User API Testing
- Scenario: Create user with valid data
-   Given I have valid user payload
-   When I send POST request to create user
-   Then response status should be 200
-   And response content type should be JSON
-   And response should contain success message
+
+Scenario: Create user from with valid data
+  Given I have user payload from Excel "TC01" in sheet "user"
+  When I send POST request to create user
+  Then response status should be 200
+  And response content type should be JSON
+  And response should contain success message
 
        When I login with the created username and password
     Then login should be successful with status 200

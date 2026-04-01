@@ -93,7 +93,26 @@
     </dependency>
 
     <!-- IMPORTANT: Do NOT include TestNG or cucumber-testng or cucumber-picocontainer -->
+
+    <!-- Logging: SLF4J API + Logback Classic -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.13</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.4.14</version>
+    </dependency>
+      <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.5</version> <!-- or the latest stable -->
+  </dependency>
   </dependencies>
+  
+
 
   <build>
     <plugins>

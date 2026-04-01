@@ -1,5 +1,9 @@
 stepdefinitions\NegativePetSteps.class
-stepdefinitions\Store.class
 stepdefinitions\NegativeUserSteps.class
 stepdefinitions\PetSteps.class
+utils\Excel.class
+client\BaseApiClient.class
+stepdefinitions\LoggingHooks.class
+stepdefinitions\Store.class
+utils\Slf4jRestAssuredFilter.class
 stepdefinitions\UserSteps.class

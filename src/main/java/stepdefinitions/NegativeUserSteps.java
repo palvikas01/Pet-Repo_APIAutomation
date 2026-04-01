@@ -12,8 +12,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class NegativeUserSteps {
+    private static final Logger log = LoggerFactory.getLogger(NegativeUserSteps.class);
     private static final String BASE_URI = "https://petstore.swagger.io/v2";
     Response response;
     Map<String, Object> payload;
@@ -51,9 +54,9 @@ public class NegativeUserSteps {
         .when()
             .post("/user");
 
-        // Print details (note: Surefire may capture stdout to target/surefire-reports by default)
-        System.out.println("NEGATIVE CREATE - Status: " + response.getStatusLine());
-        System.out.println("NEGATIVE CREATE - Body:\n" + response.asPrettyString());
+        // Log details (Surefire will also capture console to target/surefire-reports)
+        log.info("NEGATIVE CREATE - Status: {}", response.getStatusLine());
+        log.info("NEGATIVE CREATE - Body:\n{}", response.asPrettyString());
     }
 
     @When("I login with a non-existing user")
@@ -66,9 +69,9 @@ public class NegativeUserSteps {
         .when()
             .get("/user/login");
 
-        System.out.println("NEGATIVE LOGIN - Username: " + nonExisting);
-        System.out.println("NEGATIVE LOGIN - Status: " + response.getStatusLine());
-        System.out.println("NEGATIVE LOGIN - Body:\n" + response.asPrettyString());
+        log.info("NEGATIVE LOGIN - Username: {}", nonExisting);
+        log.info("NEGATIVE LOGIN - Status: {}", response.getStatusLine());
+        log.info("NEGATIVE LOGIN - Body:\n{}", response.asPrettyString());
     }
 
     @When("I get user by username {string}")
@@ -79,9 +82,9 @@ public class NegativeUserSteps {
         .when()
             .get("/user/{username}");
 
-        System.out.println("NEGATIVE GET - Username: " + user);
-        System.out.println("NEGATIVE GET - Status: " + response.getStatusLine());
-        System.out.println("NEGATIVE GET - Body:\n" + response.asPrettyString());
+        log.info("NEGATIVE GET - Username: {}", user);
+        log.info("NEGATIVE GET - Status: {}", response.getStatusLine());
+        log.info("NEGATIVE GET - Body:\n{}", response.asPrettyString());
     }
 
     @Then("negative response status should be {int}")
